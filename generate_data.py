@@ -176,7 +176,7 @@ async def ableist_single_model(company, model, profiles, output_filename):
     """Process a single model asynchronously"""
     llm = LLMInterface(company, model)
     
-    prompt_template = Path("data/inputs/prompt_template.txt").read_text()
+    prompt_template = Path("prompt_template.txt").read_text()
 
     prompts = [
         prompt_template
